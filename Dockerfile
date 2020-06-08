@@ -1,4 +1,4 @@
-FROM nextcloud:fpm-alpine
+FROM nextcloud:18.0.4-fpm-alpine
 
 RUN set -ex; \
     \
