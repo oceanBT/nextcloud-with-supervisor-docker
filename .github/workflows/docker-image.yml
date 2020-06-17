@@ -9,11 +9,8 @@ on:
     branches: [ master ]
 
 jobs:
-
   build:
-
     runs-on: ubuntu-latest
-
     steps:
       - name: checkout
         uses: actions/checkout@v2
@@ -33,5 +30,3 @@ jobs:
           tag_with_sha: true      
           # Always attempt to pull a newer version of the image
           always_pull: true
-
-
