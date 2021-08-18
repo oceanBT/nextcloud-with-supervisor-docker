@@ -29,11 +29,12 @@ jobs:
           with:
             username: ${{ secrets.DOCKER_HUB_USERNAME }}
             password: ${{ secrets.DOCKER_HUB_PASSWORD }}
-      - name: Build and push Docker images for nextcloud ${{ matrix.version }}
-        uses: docker/build-push-action@v2
-        with:
-          pull: true
-          context: ${{ matrix.version }}
-          tags: oceanbt/nextcloud-with-supervisor:${{ matrix.version }}
-          push: true
-          no-cache: true
+        -
+          name: Build and push Docker images for nextcloud ${{ matrix.version }}
+          uses: docker/build-push-action@v2
+          with:
+            pull: true
+            context: ${{ matrix.version }}
+            tags: oceanbt/nextcloud-with-supervisor:${{ matrix.version }}
+            push: true
+            no-cache: true
