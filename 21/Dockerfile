@@ -1,4 +1,5 @@
-FROM nextcloud:21.0.3-fpm-alpine
+# https://raw.githubusercontent.com/nextcloud/docker/master/.examples/dockerfiles/full/fpm-alpine/Dockerfile
+FROM nextcloud:21.0.4-fpm-alpine
 
 RUN set -ex; \
     \
@@ -17,7 +18,7 @@ RUN set -ex; \
         $PHPIZE_DEPS \
         imap-dev \
         krb5-dev \
-        libressl-dev \
+        openssl-dev \
         samba-dev \
         bzip2-dev \
     ; \
