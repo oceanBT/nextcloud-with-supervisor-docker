@@ -1,12 +1,12 @@
 version: 2
 updates:
 - package-ecosystem: docker
-  directory: "/20"
+  directory: "/21"
   schedule:
     interval: daily
   open-pull-requests-limit: 10
 - package-ecosystem: docker
-  directory: "/21"
+  directory: "/22"
   schedule:
     interval: daily
   open-pull-requests-limit: 10
