@@ -1,17 +1,17 @@
 version: 2
 updates:
 - package-ecosystem: docker
+  directory: "/25"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+- package-ecosystem: docker
   directory: "/24"
   schedule:
     interval: daily
   open-pull-requests-limit: 10
 - package-ecosystem: docker
   directory: "/23"
-  schedule:
-    interval: daily
-  open-pull-requests-limit: 10
-- package-ecosystem: docker
-  directory: "/latest"
   schedule:
     interval: daily
   open-pull-requests-limit: 10
