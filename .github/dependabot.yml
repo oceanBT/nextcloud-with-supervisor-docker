@@ -6,7 +6,7 @@ updates:
     interval: daily
   open-pull-requests-limit: 10
 - package-ecosystem: docker
-  directory: "/24"
+  directory: "/28"
   schedule:
     interval: daily
   open-pull-requests-limit: 10
