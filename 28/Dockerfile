@@ -1,5 +1,5 @@
 # https://raw.githubusercontent.com/nextcloud/docker/master/.examples/dockerfiles/full/fpm-alpine/Dockerfile
-FROM nextcloud:28.0.13-fpm-alpine
+FROM nextcloud:28.0.14-fpm-alpine
 
 RUN set -ex; \
     \
