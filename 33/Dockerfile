@@ -1,5 +1,5 @@
 # https://raw.githubusercontent.com/nextcloud/docker/master/.examples/dockerfiles/full/fpm-alpine/Dockerfile
-FROM nextcloud:30.0.12-fpm-alpine
+FROM nextcloud:33.0.0-fpm-alpine
 
 RUN set -ex; \
     \
@@ -50,3 +50,5 @@ COPY supervisord.conf /
 ENV NEXTCLOUD_UPDATE=1
 
 CMD ["/usr/bin/supervisord", "-c", "/supervisord.conf"]
+
+HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 CMD pgrep php-fpm || exit 1
